@@ -11,7 +11,7 @@ repository:
   enable_vulnerability_alerts: true
 
 branches:
-  - name: main
+  - name: npm-get-started
     protection:
       required_status_checks: null
       enforce_admins: true
@@ -24,4 +24,4 @@ branches:
       restrictions:
         apps: []
         users: []
-        teams: [ "cli-team" ]
+        teams: [Team1]
