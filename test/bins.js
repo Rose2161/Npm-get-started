@@ -10,19 +10,9 @@ t.test('auto bin population', async (t) => {
     testdir: {
       bin: { 'run.js': '' },
     },
-    inputs: [
-      'auto-bin-test',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      'yes',
-      'dummy',
-    ],
+    inputs: {
+      name: 'auto-bin-test',
+    },
   })
   t.same(data.bin, { 'auto-bin-test': 'bin/run.js' },
     'bin auto populated with correct path')
